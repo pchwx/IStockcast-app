@@ -331,7 +331,7 @@ def set_params(df, list_col):
     with col2:
         st.subheader("Choose SA parameters")
         init_temp =st.number_input('Initial Temperature', step=1, min_value=10, value=1000) # ใส่ help
-        stop = st.number_input('The number of repeated solutions', value=1000, help=' Number of iterations for stopping criteria when solution does not improve.', min_value=0, step=1)
+        stop = st.number_input('The number of repeated solutions', value=500, help=' Number of iterations for stopping criteria when solution does not improve.', min_value=0, step=1)
         
     with col3:
         num_data = len(df)
